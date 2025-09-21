@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Redirecting…</title>
+    <script type="text/javascript">
+      // Redirect all 404s to index.html so React Router can handle them
+      var redirectTo = window.location.protocol + "//" + window.location.host + "/e-plantShopping/";
+      var pathname = window.location.pathname.replace("/e-plantShopping", "");
+      window.location.replace(redirectTo + "#" + pathname + window.location.search + window.location.hash);
+    </script>
+  </head>
+  <body>
+    Redirecting…
+  </body>
+</html>
